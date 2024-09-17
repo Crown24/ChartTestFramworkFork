@@ -22,6 +22,8 @@ namespace ChartTestFramwork
         void stopLiveData();
         double getValue();
 
+        void saveSQL(ECGValue aktuellerWert);
+
 
     }
 }

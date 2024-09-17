@@ -22,5 +22,7 @@ namespace ChartTestFramwork
 
         void stopSaveLiveData();
 
+        void saveSQL();
+
     }
 }

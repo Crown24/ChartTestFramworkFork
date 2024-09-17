@@ -35,6 +35,21 @@ namespace ChartTestFramwork
             }
         }
 
+        void IControllerEKG.saveSQL()
+        {
+            liveSave = true;
+            while (liveSave == true)
+            {
+                ECGValue aktuellerWert = new ECGValue();
+                aktuellerWert.TimeStamp = DateTime.Now;
+                aktuellerWert.Value = modelEKGDevice.getValue();
+                modelLocalData.saveLiveData(aktuellerWert);
+                Application.DoEvents();
+                modelEKGDevice.saveSQL(aktuellerWert);
+            }
+            
+        }
+
         void IControllerEKG.startLiveData()
         {
            modelEKGDevice.startLiveData();
@@ -49,5 +64,9 @@ namespace ChartTestFramwork
         {
             this.liveSave=false;
         }
+
+
+
+
     }
 }
