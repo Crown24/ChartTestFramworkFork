@@ -53,6 +53,7 @@
     <Compile Include="IModelECGDevice.cs" />
     <Compile Include="IModelLocalData.cs" />
     <Compile Include="IViewEKG.cs" />
+    <Compile Include="KlasseImDev.cs" />
     <Compile Include="ModelLocaldata.cs" />
     <Compile Include="Not_A_Virus.cs" />
     <Compile Include="ViewEKG.cs">
