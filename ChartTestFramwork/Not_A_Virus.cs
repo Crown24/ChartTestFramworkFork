@@ -8,5 +8,6 @@ namespace ChartTestFramwork
 {
     internal class Not_A_Virus
     {
+        //Wer das liest ist doof
     }
 }
